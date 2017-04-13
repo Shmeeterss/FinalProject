@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ishmeet.finalproject.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@android:color/holo_blue_dark">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="PokePapers"
+            android:textSize="30sp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/music"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="7dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:text="Music"
+
+            />
+
+        <Button
+            android:id="@+id/demo"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="7dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="Demo"
+
+            />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_below="@id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:background="@android:color/holo_blue_dark"
+        >
+    </ListView>
+
+
+</RelativeLayout>
